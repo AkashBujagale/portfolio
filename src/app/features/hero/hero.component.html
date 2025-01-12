@@ -1,0 +1,37 @@
+<section class="hero-section">
+  <div class="hero-content">
+    <h1 class="p1 animate" [ngClass]="{ 'fade-up': isLoading() }">
+      Hi, my name is
+    </h1>
+    <span class="name-holder">
+      <h1 class="gradient t1 animate" [ngClass]="{ 'fade-up': isLoading() }">
+        Akash
+      </h1>
+      <h1 class="gradient t2 animate" [ngClass]="{ 'fade-up': isLoading() }">
+        Bujagale.
+      </h1>
+    </span>
+    <p class="title-statement animate" [ngClass]="{ 'fade-up': isLoading() }">
+      I am a <span class="job-title">full stack software engineer </span>with a
+      strong focus in development, currently working at
+      <a href="https://amadeus.com/en/bengaluru-labs-india" target="_blank" class="amadeuscolor">
+        Amadeus Software Labs India Pvt Ltd
+      </a>
+    </p>
+    <app-social-links
+      class="social-media-links animate"
+      [ngClass]="{ 'fade-up': isLoading() }"
+    ></app-social-links>
+  </div>
+  <div class="hero-image-holder animate" [ngClass]="{ 'fade-up': isLoading() }">
+    <img
+      src="assets/hero_image.webp"
+      width="250"
+      height="250"
+      class="hero-image"
+      srcset="assets/hero_image.webp 100w, assets/hero_image.webp 200w, assets/hero_image.webp 300w"
+      alt="hero image"
+      priority
+    />
+  </div>
+</section>
